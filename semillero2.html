@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mapa Conceptual - Investigación en IoT y Big Data</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 50px;
+                color: white; /* Color de texto blanco para contraste */
+            }
+            .node {
+                border: 2px solid #788f27;
+                border-radius: 10px;
+                padding: 20px;
+                margin: 10px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+            .node:hover {
+                background-color: #e7f0ff;
+            }
+            .modal-content {
+                max-width: 800px;
+                margin: auto;
+            }
+            .diagram {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 100%;
+            }
+            /* CSS para la imagen pequeña */
+            .icono-imagen {
+            width: 150px;
+            height: 100px;
+            display: block;
+            margin: 0 auto; /* Centra la imagen horizontalmente */
+
+            }
+            body {
+                /* Añadir un degradado oscuro encima de la imagen */
+                background-image: 
+                    linear-gradient(rgba(0, 0, 0, 0.6), rgba(145, 22, 145, 0.856)), 
+                    url('file:///C:/Users/ACER/Desktop/semillero/Semillero%202/imagen/1.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                color: rgb(0, 0, 0); /* Texto blanco para visibilidad */
+                font-family: Arial, sans-serif;
+            }
+    
+            h2 {
+                text-align: center;
+                font-size: 2em;
+                margin-bottom: 30px;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <div class="container">
+        <h2>Mapa Conceptual - Investigación en IoT y Big Data</h2>
+        <div class="diagram">
+            <div class="node" data-toggle="modal" data-target="#areaModal">Área de Investigación</div>
+            <div class="node" data-toggle="modal" data-target="#objectivesModal">Objetivos</div>
+            <div class="node" data-toggle="modal" data-target="#questionsModal">Preguntas Guía</div>
+            <div class="node" data-toggle="modal" data-target="#theoriesModal">Teorías y Modelos</div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="areaModal" tabindex="-1" role="dialog" aria-labelledby="areaModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="areaModalLabel">Área de Investigación</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                     <ul>
+                        <li>Análisis de la información y Big Data </li>
+                        <li>Internet de las cosas </li>
+                        <li>Automatización de procesos industriales </li>
+                        <li>Enlaces, telecomunicaciones y redes </li>
+                        <p><img src="file:///C:/Users/ACER/Desktop/semillero/Semillero%202/imagen/2.jpg" alt="icono" class="icono-imagen"></p>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal para Objetivos -->
+    <div class="modal fade" id="objectivesModal" tabindex="-1" role="dialog" aria-labelledby="objectivesModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="objectivesModalLabel">Objetivos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ol>
+                        <li>Determinar la comprensión del Internet de las Cosas y su aplicación en los medios que se interactúan diariamente.</li>
+                        <li>Realizar la integración de la información por medio de los sistemas lógicos programables.</li>
+                        <li>Establecer un plan estructurado del análisis de la información correspondiente a la generación de datos y emplear metodologías de análisis (descriptivo, inferencial, predictivo, diagnóstico, prescriptivo, de clúster, de series temporales y minería de datos).</li>
+                        <p><img src="file:///C:/Users/ACER/Desktop/semillero/Semillero%202/imagen/3.jpg" alt="icono" class="icono-imagen"></p>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal para Preguntas Guía -->
+    <div class="modal fade" id="questionsModal" tabindex="-1" role="dialog" aria-labelledby="questionsModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="questionsModalLabel">Preguntas Guía</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>¿Cuáles son las principales tendencias y desafíos en el campo?</p>
+                    <p>¿Qué limitaciones o vacíos se encuentran en la investigación?</p>
+                    <p>¿Qué teorías, modelos o enfoques han sido aplicados para estudio?</p>
+                    <p><img src="file:///C:/Users/ACER/Desktop/semillero/Semillero%202/imagen/4.jpg" alt="icono" class="icono-imagen"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal para Teorías y Modelos -->
+    <div class="modal fade" id="theoriesModal" tabindex="-1" role="dialog" aria-labelledby="theoriesModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="theoriesModalLabel">Teorías y Modelos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Las tarjetas microprocesadoras son un computador de baja escala que puede ser programado y subida la información cuantas veces se requiera para la aplicación de conexiones periféricas que ayudan a generar proyectos de domótica, internet de las cosas, automatización y control de potencia.</p>
+                    <p>Las tarjetas con mayor reconocimiento internacional son Arduino, ESP32 y los PLC.</p>
+                    <p><img src="file:///C:/Users/ACER/Desktop/semillero/Semillero%202/imagen/5.jpg" alt="icono" class="icono-imagen"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+    
